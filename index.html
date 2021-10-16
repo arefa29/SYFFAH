@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYFFAH</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBnUHtLmKDD6ZwFmwSwhDQ4UhddT5MEGL4",
+          authDomain: "project-syffah.firebaseapp.com",
+          projectId: "project-syffah",
+          storageBucket: "project-syffah.appspot.com",
+          messagingSenderId: "530865337729",
+          appId: "1:530865337729:web:53d8719e9747f343fa2480",
+          measurementId: "G-GT42C1LSYY"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+</head>
+<body>
+    <header>
+        <div class="top-rect"></div> 
+        <nav class="next-rect">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="how-we-operate.html">HOW WE OPERATE</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a id="log-in-or-out" href="log-in.html">LOG IN</a></li>
+                    <li><a href="index.html#contribute">MENU</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <!--Home-->
+    <section class="home" id="home">
+        <div class="home-card">
+            
+            <div class="home-name">
+                <p class="full-form">S - Share</p><br>
+                <p class="full-form">Y - Your</p><br>
+                <p class="full-form">F - Food</p><br>
+                <p class="full-form">F - Feed</p><br>
+                <p class="full-form">A - All</p><br>
+                <p class="full-form">H - Humanity</p><br>
+            </div>
+            <div class="home-text">
+                <h1>"Helping one person might not change the whole world,<br>but it can change the world<br> for one person"</h1>
+                <br>
+                <a href="index.html#contribute" class="hero-btn">Start Contributing</a>
+            </div>
+            <div class="home-image">
+                <img src="images/home-image-collage.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--    Join Us In Our Fight    -->
+    <hr style="width: 100%; color:black; margin-left: 0;">
+    <section class="contribute" id="contribute">
+                <h1>Join Us In Our Fight</h1>
+        <p id="main-para">
+            You cannot help everyone, but everyone can help someone.<br>
+            Contribute Now!
+        </p>
+        <div class="row">
+            <div class="contribute-col">
+                <img src="images/contribute1.jpg" alt="">
+                <h3><br>Want to donate food?</h3>
+                <p>Instead of throwing away the leftovers and the excess food items, donate them to people who go to sleep hungry every night...
+                </p><br>
+                <a href="food-page.html" class="hero-btn">Donate Now</a>
+            </div>
+            <div class="contribute-col">
+                <img src="images/contribute2.jpg" alt="">
+                <h3><br>Looking for food?</h3>
+                <p>Whether you are an NGO, a Hunger Relief Organization or just an individual searching for food, anyone can access!
+                </p><br>
+                <a href="food-page.html" class="hero-btn">Find Now</a>
+            </div>
+            <div class="contribute-col">
+                <img src="images/contribute3.jpg" alt="">
+                <h3>Want to donate an Old Refrigerator?</h3>
+                <p>Instead of throwing away your old refrigerators or second-hand refrigerators, donate them to set-up Community Refrigerators!
+                </p><br>
+                <a href="fridge-page.html" class="hero-btn">Donate Refrigerator</a>
+            </div>
+            <div class="contribute-col">
+                <img src="images/contribute4.jpg" alt="">
+                <h3>Want to set up a Community Refrigerator?</h3>
+                <p>If you are someone who wants to set up a community refrigerator in their locality or society, reach out to us, we got you!
+                </p><br>
+                <a href="fridge-page.html" class="hero-btn">Connect With Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!----About Us---->
+    <section class="about-us">
+        <h1>About Us</h1>
+        <p>SYFFAH, which stands for 'Share Your Food, Feed All Humanity' is a Non-Profit Organization working in New York, USA. Established in January 2021, our dedicated team works endlessly towards a more sustainable and equitable future.</p>
+        <div class="row">
+            <div class="about-us-col">
+                <h3>Tackling Food Waste</h3>
+                <p>Our website connects food donors such as individuals with leftover food, event caterers with excess food, grocery store-keepers etc. to food collectors like NGOs and Hunger Relief Organizations who can distribute the food among needy so that no food goes into the drains while millions sleep hungry.
+                </p>
+            </div>
+            <div class="about-us-col">
+                <h3>Our Mission</h3>
+                <p>SYFFAH aims to reduce food wastage and E-wastage which are major contributers to solid waste in NYC, while simultaneously combating issues of poverty and hunger in NYC, which have been further aggravated post COVID-19 pandemic. Thus, tackling 5 of the 17 UN Sustainable Development Goals simultaneously.
+                </p>
+            </div>
+            <div class="about-us-col">
+                <h3>Tackling E-Waste</h3>
+                <p>Through our website individuals, shops, etc. can donate their old/second hand refrigerator instead of throwing it away to landfills. We then repair these refrigerators and set them up across the city so that people can keep leftover food in it and underprivileged people can take that food to eat. These are hence called Community refrigerators.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!--testimonials-->
+    <section class="testimonials">
+        <h1>What Our Users say</h1>
+        <p>Read the stories of hundreds whose lives have been impacted by SYFFAH</p>
+        <a href="stories.html" class="hero-btn">Go to Stories Section</a>
+        <div class="row">
+            <div class="testimonials-col">
+                <img src="images/stories1.jpg" alt="">
+                <div>
+                    <p>Meet Leyna, an 8 year old girl living in the streets of South Bronx, New York. She shares that now she doesn't have to go to sleep hungry anymore as her family usually gets food from the community refrigerators that was established outside the nearby society, where the residents actively keep out the excess food in the refrigerators.
+                    </p>
+                    <h3>Leyna</h3>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-o" ></i>
+                </div>
+            </div>
+            <div class="testimonials-col">
+                <img src="images/stories2.jpg" alt="">
+                <div>
+                    <p>The NGO CityHarv Foundation in NYC is an active user of SYFFAH for procuring food and distributing it amongst various underprivileged societies in NYC. They say that earlier the task of procuring food was difficult but now we have regular supply thanks to SYFFAH's for connecting us to the donors. Till now, they have impacted more than 600 people's lives!
+                    </p>
+                    <h3>CityHarv Foundation</h3>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star" ></i>
+                    <i class="fa fa-star-half-o" ></i>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <!--Contact Us-->
+    <section class="contact">
+        <h1>Any Questions or Suggestions? <br> Feel free to connect with us</h1>
+        <a href="contact.html" class="hero-btn">Contact Us</a>
+    </section>
+
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Follow Us </h3>
+            <p>SYFFAH<br>Share Your Food, Feed All Humanity</p>
+            <div class="share">
+                <a href="#" class="sharee"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="sharee"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="sharee"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="sharee"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +011-236-1890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 98672 90554 </a>
+            <a href="contact.html" class="links"> <i class="fas fa-envelope"></i> syffah@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> B-401, Manhattan,<br> New York, USA </a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="home.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+            <a href="how-we-operate.html" class="links"> <i class="fas fa-arrow-right"></i> How We Operate </a>
+            <a href="stories.html" class="links"> <i class="fas fa-arrow-right"></i> Stories </a>
+            <a href="log-in.html" class="links"> <i class="fas fa-arrow-right"></i> Log In </a>
+        </div>
+        <div class="box">
+            <h3>Contribute</h3>
+            <a href="food-page.html" class="links"> <i class="fas fa-arrow-right"></i> Donate Food </a>
+            <a href="food-page.html" class="links"> <i class="fas fa-arrow-right"></i> Find Food </a>
+            <a href="fridge-page.html" class="links"> <i class="fas fa-arrow-right"></i> Donate Fridge </a>
+            <a href="fridge-page.html" class="links"> <i class="fas fa-arrow-right"></i> Set up Community Refrigerator </a>
+            <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i> Send Query </a>
+        </div>
+
+        
+    </div>
+
+    <div class="credit"> created by <span> abc </span> | all rights reserved </div>
+
+</section>
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+    <!--firebase-->
+    <script src="syffah.js"></script>
+        
+</body>
+</html>

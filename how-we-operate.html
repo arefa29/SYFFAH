@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Operate</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBnUHtLmKDD6ZwFmwSwhDQ4UhddT5MEGL4",
+          authDomain: "project-syffah.firebaseapp.com",
+          projectId: "project-syffah",
+          storageBucket: "project-syffah.appspot.com",
+          messagingSenderId: "530865337729",
+          appId: "1:530865337729:web:53d8719e9747f343fa2480",
+          measurementId: "G-GT42C1LSYY"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+
+</head>
+<body>
+    <header>
+        <div class="top-rect"></div> 
+        <nav class="next-rect">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="how-we-operate.html">HOW WE OPERATE</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a id="log-in-or-out" href="log-in.html">LOG IN</a></li>
+                    <li><a href="index.html#contribute">MENU</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+<!--    how-we-operate starts    -->
+<section class="how-we-operate">
+    <div class="function1">
+        <img src="images/f1.jpg" alt="">
+    </div>
+    <div class="function2">
+        <img src="images/f2.jpg" alt="">
+    </div>
+</section>
+
+
+    
+
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> Follow Us </h3>
+            <p>SYFFAH<br>Share Your Food, Feed All Humanity</p>
+            <div class="share">
+                <a href="#" class="sharee"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="sharee"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="sharee"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="sharee"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +011-236-1890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +91 98672 90554 </a>
+            <a href="contact.html" class="links"> <i class="fas fa-envelope"></i> syffah@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> A-22, Ashok Vihar,<br> New Delhi, India </a>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links</h3>
+            <a href="home.html" class="links"> <i class="fas fa-arrow-right"></i> Home </a>
+            <a href="about.html" class="links"> <i class="fas fa-arrow-right"></i> About Us </a>
+            <a href="how-we-operate.html" class="links"> <i class="fas fa-arrow-right"></i> How We Operate </a>
+            <a href="stories.html" class="links"> <i class="fas fa-arrow-right"></i> Stories </a>
+            <a href="log-in.html" class="links"> <i class="fas fa-arrow-right"></i> Log In </a>
+        </div>
+        <div class="box">
+            <h3>Contribute</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Donate Food </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Find Food </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Donate Fridge </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Set up Community Refrigerator </a>
+            <a href="contact.html" class="links"> <i class="fas fa-arrow-right"></i> Send Query </a>
+        </div>
+
+        
+    </div>
+
+    <div class="credit"> created by <span> xyz </span> | all rights reserved </div>
+
+</section>
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+
+    <!--firebase-->
+    <script src="syffah.js"></script>
+        
+</body>
+</html>

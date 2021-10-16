@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syffah-Log In</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="top-rect"></div> 
+        <nav class="next-rect">
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="how-we-operate.html">HOW WE OPERATE</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="log-in.html">LOG IN</a></li>
+                    <li><a href="index.html#contribute">MENU</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <!--    LOG IN  PAGE    -->
+
+    <!--sign up-->
+    <div class="container-login" id="content01">
+        <div class="img-slider">
+            <h2>Welcome to SYFFAH</h2>
+            <p>Join our community and start contributing today </p>
+                <img src="./Images/Img1-removebg-preview.png" alt="img">
+        </div>
+        <div class="content-login">
+            <h2>Get Started</h2>
+            <p>Already have account ?  <button onclick="showSignIn()">Sign In </button></p>
+            <form id="form">
+                <label for="name" id="nlabel">Name of Individual or Organization</label> <br>
+                <input type="text" id="fname" placeholder="Ananya Lal " autocomplete="off"> <br>
+                <label for="email" id="elabel">Email ID</label> <br>
+                <input type="email" id="eemail" placeholder="ananya@gmail.com" autocomplete="off"> <br>
+                <label for="number" id="clabel">Contact Number</label> <br>
+                <input type="text" id="nnumber" placeholder="9871223452" autocomplete="off"> <br>
+                <label for="address" id="alabel">Address</label> <br>
+                <input type="text" id="aadress" placeholder="B-23, Sector 15, Noida" autocomplete="off"> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" name="password" id="lpassword"> <br>
+                <button type="submit"  class="hero-btn red-btn" onclick="UserRegister()" id="btn">Sign Up </button>
+            </form>
+            <!--<div class="other-login">
+                <h3>Or Sign up with 
+                
+                    <i class="fa fa-google" ></i>  Google</h3>
+                    
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <!--sign in -->
+    <div class="container-login" id="content02">
+        <div class="img-slider">
+            <h2>Welcome to SYFFAH</h2>
+            <p>Join our community and start contributing today </p>
+                <img src="images/undraw_mobile_login_ikmv-removebg-preview.png" alt="img" class="sign-img">
+        </div>
+        <div class="content-login">
+            <h2>Get Started</h2>
+            <p>Don't have account ?  <button onclick="showSignUp()">Sign up </button></p>
+            <form action="" id="form">
+                <label for="email" id="elabel">Email</label> <br>
+                <input type="email" id="eemail" placeholder="Lucifer@gmail.com" autocomplete="off"> <br>
+                <label for="password" id="plabel">Password</label> <br>
+                <input type="password" name="password" id="lpassword"> <br>
+                <button type="submit" class="hero-btn red-btn" onclick="SignIn()" id="btn1">Log-In </button>
+            </form>
+            <!--<div class="other-login">
+                <h3>Or Sign in with 
+                
+                    <i class="fa fa-google" ></i>  Google</h3>
+                
+            </div>-->
+        </div>
+    </div>
+    
+    <script src="syffah.js"></script>
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        function showSignIn(){
+  document.getElementById("content01").style.display= "none";
+  document.getElementById("content02").style.display = "block";
+}
+function showSignUp(){
+  document.getElementById("content02").style.display= "none";
+  document.getElementById("content01").style.display = "block";
+}
+
+    </script>
+
+
+        
+</body>
+</html>

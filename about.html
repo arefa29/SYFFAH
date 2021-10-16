@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyBnUHtLmKDD6ZwFmwSwhDQ4UhddT5MEGL4",
+          authDomain: "project-syffah.firebaseapp.com",
+          projectId: "project-syffah",
+          storageBucket: "project-syffah.appspot.com",
+          messagingSenderId: "530865337729",
+          appId: "1:530865337729:web:53d8719e9747f343fa2480",
+          measurementId: "G-GT42C1LSYY"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</head>
+<body>
+    <!--Header--> 
+    <header>
+        <div class="top-rect"></div> 
+        <nav class="next-rect">
+            <a href="index.html"><img src="images/logo.png"</a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="how-we-operate.html">HOW WE OPERATE</a></li>
+                    <li><a href="stories.html">STORIES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="log-in.html">LOG IN</a></li>
+                    <li><a href="index.html#contribute">MENU</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </header>
+
+    <section class="about-us">
+        <h1>About Us</h1>
+        <div class="row">
+            <div class="about-col">
+                <h3>SYFFAH</h3>
+                <p>SYFFAH, which stands for 'Share Your Food, Feed All Humanity' is a Non-Profit Organization working in New York City, USA. Established in January 2021, our dedicated team works endlessly towards a more sustainable and equitable future.
+                <br><span>Our Mission</span> is to tackle food wastage and electronic-wastage which are major challenges in NYC, while simultaneously combating issues of hunger amongst homeless and needy in NYC, which have been further aggravated post COVID-19 pandemic. Thus, tackling 5 of the 17 UN Sustainable Development Goals simultaneously.
+                </p>
+                <a href="" class="hero-btn red-btn">Read Stories</a>
+            </div>
+            <div class="about-col">
+                <img src="images/aboutimg.jpg" alt="">
+            </div>
+        </div>
+
+            <div class="para1">
+                <h3>Our Project: In a nutshell</h3>
+                <p>While doing our research we came across two areas where proper waste disposal mechanisms are not available:</p>
+                    <ul>
+                        <li>Food waste: <br>Each year, about 3.9 million tons of wasted food from New York ends up in landfills, where it slowly decays and is a major contributor to methane gas production. At the same time, 12.8 percent of New Yorkers are food insecure. And there are no well established mechanisms to tackle this issue.
+                        </li>
+                        <li>E-Waste: <br>The United States generated 6.92 million tons of e-waste, about 46 pounds per person, in 2019. It recycled only 15% of the material. Refrigerators are one form of E-waste which cannot be discarded in landfills which makes their disposal even more difficult.
+                        </li>
+                    </ul><br>
+                <p>Both these issues contribute tremendously to the detrimental impacts of improper solid waste management. Hence, our project aims to tackle all these issues simultaneously in New York State. We have provided an app based solution which will allow users to donate old refrigerators, which they otherwise throw away, which will be set up across the city. People who have leftover food to donate can keep it in these community refrigerators so that the poor and homeless can take this food and eat it. Thus, we allow the reuse of refrigerators makingn their disposal easy. The project will have some other components as well which are explained in the following sections.
+                </p>
+            </div>
+            <div class="para2">
+                <h3>The Problem: An Overview</h3>
+                <p>
+                    <ol>
+                        <li><h5>Food Waste</h5>
+                            <p>While one report by the UN’s Food and Agricultural Organisation (FAO) states that roughly one-third of the food produced in the world for human consumption every year i.e. approximately 1.3 billion tonnes - gets lost or wasted, another report by Feeding America states that more than 1.5 million New Yorkers now experience food insecurity, including 1 in 3 children. This poses a threat not just to the society but also holds serious environmental implications. And the COVID-19 pandemic has only worsened the situation.
+                                
+                                The environmental issues related to food wastage that we wish to address:
+                                <ul>
+                                <li>Food Loss and Waste is responsible for 8% of the Global Greenhouse Gas (GHG) emissions. The wasted food that goes as landfill produces methane which is 25% more potent than carbon dioxide.</li>
+                                <li>The water used to clear off wasted food is enough for 9 billion people who use 200 litres of water a day.</li>
+                                <li>300 million barrels of oil used to produce food is ultimately wasted.</li> 
+                            </ul><br>
+                            We have focused our attention on NYC, the major sources that we have identified are:
+                            <ul>
+                                <li>Residential areas & colleges</li>
+                                <li>Restaurants & Hotels</li>
+                                <li>Grocery Stores</li>
+                                <li>Weddings & Parties</li>
+                            </ul><br>
+                            At the same time, one in every 106 New Yorkers is homeless — that's nearly 80,000 men, women and children. Apart from that, there are other vulnerable groups like daily wage workers, their children, homeless rag-pickers, beggars, etc. who suffer from hunger and malnutrition. So, in order to tackle both these issues simultaneously we aim to provide an app-based solution. Our app SYYFAH, which stands for ‘Share Your Food, Feed All Humanity’ would facilitate the transfer of food from places of excess to places where there is shortage thereby successfully bridging the gap.
+                            </p>
+                        </li>
+                        <li><h5>Electronic-Waste</h5>
+                            <p>
+                            Problems relating to e-waste:
+                            <ul>
+                                <li>When e-waste is dumped in landfills, the lead, mercury, cadmium, arsenic, and PCBs make the soil and groundwater toxic.</li>
+                                <li>Recycling of e-waste by burning to retrieve metal from wires has led to the emission of brominated and chlorinated dioxins as well as carcinogens.</li>
+                                <li>Processes such as incineration are used to dispose the waste and result in direct exposure and inhalation of harmful chemicals. Safety equipment such as gloves and face masks are not widely used leading to entering of dangerous material in the bloodstream of the individual doing so. </li>
+                            </ul><br>
+                            To combat this, another functionality will be adopted within the app which will allow the setting up of refrigerators donated by people (via the app) from where the poor and needy can access food since one of the major causes of food wastage post-harvest can be attributed to the lack of storage facilities and cold-chain infrastructure. By doing so, we would be able to combat the issue of improper E- waste disposal  and its harmful effects on nature as well as workers involved in recycling it.
+                            </p>
+                        </li>
+                    </ol>                    
+                </p>
+            </div>
+
+    </section>
+
+
+
+    
+
+    
+
+
+    <!--JavaScript for Toggle Menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+
+    </script>
+    <script src="syffah.js"></script>
+        
+</body>
+</html>
